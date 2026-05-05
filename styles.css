@@ -123,19 +123,40 @@ body {
 
 
 .hero {
-    background-color: #b42020;
     position: relative;
     width: 100%;
 }
 
 .hero_video {
-    height: 100%;
+    width: 100%;
 
     video {
-        position: relative;
+        display: block;
         width: 100%;
-        height: 100%;
-        object-fit: fill;
+        height: auto;
+    }
+}
+
+.informacion {
+    margin-top: -2px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-image: url(assets/img/elden-ring-background-page-clouds.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info_logo {
+    transform: translateY(-45%);
+    margin: 0 auto;
+    width: 35%;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
     }
 }
 
