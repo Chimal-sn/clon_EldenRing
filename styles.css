@@ -6,6 +6,10 @@
 
 /*/////////////////////////////////////////// HEADER///////////////////////////////////////////////////*/
 
+body {
+    position: relative;
+}
+
 .header {
     width: 100%;
     background-color: #000000;
@@ -33,15 +37,20 @@
 }
 
 .header_nav {
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    padding: 10px 30px;
+    top: 0;
+    z-index: 1000;
 }
 
 .header_nav_left {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 
     a {
         display: flex;
@@ -53,6 +62,10 @@
 
         &:hover {
             color: #c19d53;
+
+            svg {
+                transform: rotate(180deg);
+            }
         }
 
         transition: color 0.2s ease;
@@ -60,11 +73,6 @@
         svg {
             width: 20px;
             height: 20px;
-
-            &:hover {
-                transform: rotate(180deg);
-            }
-
             transition: transform 0.2s ease;
         }
     }
@@ -111,4 +119,27 @@
         transition: color 0.2s ease,
         background-color 0.2s ease;
     }
+}
+
+
+.hero {
+    background-color: #b42020;
+    position: relative;
+    width: 100%;
+}
+
+.hero_video {
+    height: 100%;
+
+    video {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+}
+
+
+footer {
+    height: 3000px;
 }
