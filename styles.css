@@ -147,13 +147,16 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 0 80px 20px 80px;
+    padding: 0 100px 20px 100px;
     gap: 40px;
 }
 
 .info_logo {
-    margin: -120px auto 0 auto;
-    width: 800px;
+    margin-top: -120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     z-index: 1;
 
     img {
@@ -187,6 +190,77 @@ body {
     }
 }
 
+
+.info_article {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    font-family: "Metropolis SemiBold", sans-serif;
+}
+
+.text_article {
+    width: 42%;
+}
+
+.video_article {
+    width: 58%;
+
+    video {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 2px;
+    }
+}
+
+
+.text_article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    p:nth-child(5) {
+        margin-bottom: 25px;
+    }
+
+    p:nth-child(6) {
+        margin-bottom: 25px;
+    }
+}
+
+.info_game_award {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+.info_plataformas {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+
+    .svg {
+        box-sizing: content-box;
+        border: 1px solid #fff;
+        padding: 15px;
+        fill: #ffffff;
+        border-radius: 5px;
+    }
+}
 
 footer {
     height: 3000px;
