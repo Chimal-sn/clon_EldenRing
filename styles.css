@@ -254,6 +254,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 
     .svg {
         box-sizing: content-box;
@@ -261,6 +262,7 @@ body {
         padding: 15px;
         fill: #ffffff;
         border-radius: 5px;
+        cursor: pointer;
     }
 }
 
@@ -269,6 +271,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 
     button {
         font-family: "Metropolis SemiBold", sans-serif;
@@ -313,5 +316,58 @@ body {
 }
 
 footer {
-    height: 3000px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #000000;
+    color: #fff;
+    padding: 40px;
+    font-size: 1rem;
+
+    article {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .mi_informacion {
+
+        svg {
+            color: #fff;
+            cursor: pointer;
+            width: 25px;
+            height: auto;
+
+            &:hover {
+                color: #c19d53;
+            }
+
+            transition: color 0.2s ease;
+        }
+    }
+
+    .derechos_reservados {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .linea {
+        color: #fff;
+        font-weight: 700;
+        padding-bottom: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+
+        &:hover {
+            color: #e20613;
+
+            hr {
+                width: 50%;
+            }
+
+        }
+    }
+
 }
