@@ -359,6 +359,11 @@ footer {
         cursor: pointer;
         transition: all 0.2s ease;
 
+        hr {
+            transition: width 0.2s ease;
+            width: 100%;
+        }
+
 
         &:hover {
             color: #e20613;
