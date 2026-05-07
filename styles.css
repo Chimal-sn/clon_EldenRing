@@ -147,7 +147,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 0 100px 20px 100px;
+    padding: 0 100px 0 100px;
     gap: 40px;
 }
 
@@ -241,6 +241,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 
     img {
         width: 400px;
@@ -249,8 +250,9 @@ body {
 }
 
 .info_plataformas {
-    width: 80%;
+    width: 100%;
     display: flex;
+    justify-content: center;
     gap: 20px;
 
     .svg {
@@ -260,6 +262,54 @@ body {
         fill: #ffffff;
         border-radius: 5px;
     }
+}
+
+.buttons_comprar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    button {
+        font-family: "Metropolis SemiBold", sans-serif;
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 45px 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:nth-child(1) {
+        background-color: #c19d53;
+        border: #c19d53 1px solid;
+        color: #fff;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: transparent;
+            color: #c19d53;
+        }
+    }
+
+    button:nth-child(2) {
+        background-color: transparent;
+        border: #c19d53 1px solid;
+        color: #c19d53;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: #c19d53;
+            color: #fff;
+        }
+    }
+}
+
+.premios_menciones {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
