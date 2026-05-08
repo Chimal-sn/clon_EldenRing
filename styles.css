@@ -493,4 +493,25 @@ footer {
             display: none;
         }
     }
+
+    footer {
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+
+    .mi_informacion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer {
+        .derechos_reservados {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+        }
+    }
+
+
 }
