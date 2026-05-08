@@ -224,7 +224,6 @@ body {
     }
 }
 
-
 .text_article {
     display: flex;
     flex-direction: column;
@@ -379,7 +378,6 @@ footer {
             width: 100%;
         }
 
-
         &:hover {
             color: #e20613;
 
@@ -390,7 +388,6 @@ footer {
         }
     }
 }
-
 
 @media (width <=1024px) {
 
@@ -460,9 +457,6 @@ footer {
 }
 
 @media (width <=768px) {
-
-
-
     .info_logo {
         width: 100%;
 
@@ -490,14 +484,11 @@ footer {
     }
 }
 
-
-
 @media (width < 480px) {
 
     .hero {
         display: none;
     }
-
 
     .informacion {
         gap: 10px;
