@@ -85,6 +85,12 @@ body {
     }
 }
 
+.nav_links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .header_nav_right {
     display: flex;
     align-items: center;
@@ -188,6 +194,11 @@ body {
     span {
         color: #c19d53;
     }
+}
+
+.imagen_title {
+
+    display: none;
 }
 
 
@@ -313,6 +324,10 @@ body {
 .premios_menciones {
     display: flex;
     justify-content: center;
+
+    .premios_mobile {
+        display: none;
+    }
 }
 
 footer {
@@ -375,4 +390,107 @@ footer {
         }
     }
 
+}
+
+@media (width < 480px) {
+    .nav_links {
+        display: none;
+    }
+
+
+    .header {
+        padding: 10px 15px;
+    }
+
+    .header_top {
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .header_nav {
+        padding: 5px 15px;
+
+        svg {
+            width: 25px;
+        }
+
+    }
+
+    .header_nav_left {
+        img {
+            width: 120px;
+        }
+    }
+
+    .hero {
+        display: none;
+    }
+
+
+    .informacion {
+        gap: 10px;
+        padding: 0 20px 0 20px;
+    }
+
+    .info_logo {
+        margin-top: 0;
+
+        img {
+
+            width: 280px;
+        }
+    }
+
+    .info_title {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .info_game {
+        flex-direction: column;
+    }
+
+    .imagen_title {
+        display: block;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .info_article {
+        flex-direction: column;
+
+    }
+
+    .text_article {
+        width: 100%;
+    }
+
+    .info_game_award {
+        img {
+            width: 100%;
+        }
+    }
+
+    .video_article {
+        width: 100%;
+    }
+
+    .premios_menciones {
+
+        .premios_mobile {
+            display: block;
+            width: 320px;
+        }
+
+        .premios_desktop {
+            display: none;
+        }
+    }
 }
