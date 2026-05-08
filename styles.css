@@ -389,14 +389,37 @@ footer {
 
         }
     }
+}
+
+
+@media (width <=1024px) {
+
+    .informacion {
+        padding: 0 20px 0 20px;
+    }
+
+    .info_article {
+        flex-direction: column;
+    }
+
+    .text_article {
+        width: 100%;
+    }
+
+    .video_article {
+        width: 100%;
+    }
 
 }
 
-@media (width < 480px) {
+@media (width <1024px) {
     .nav_links {
         display: none;
     }
 
+    .nav_links {
+        display: none;
+    }
 
     .header {
         padding: 10px 15px;
@@ -424,6 +447,53 @@ footer {
         }
     }
 
+    .premios_menciones {
+
+        .premios_mobile {
+            display: block;
+        }
+
+        .premios_desktop {
+            display: none;
+        }
+    }
+}
+
+@media (width <=768px) {
+
+
+
+    .info_logo {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.8rem;
+
+        .derechos_reservados {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+        }
+
+        .mi_informacion {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+
+
+@media (width < 480px) {
+
     .hero {
         display: none;
     }
@@ -431,7 +501,6 @@ footer {
 
     .informacion {
         gap: 10px;
-        padding: 0 20px 0 20px;
     }
 
     .info_logo {
@@ -463,12 +532,7 @@ footer {
 
     }
 
-    .info_article {
-        flex-direction: column;
-
-    }
-
-    .text_article {
+    .premios_mobile {
         width: 100%;
     }
 
@@ -477,41 +541,4 @@ footer {
             width: 100%;
         }
     }
-
-    .video_article {
-        width: 100%;
-    }
-
-    .premios_menciones {
-
-        .premios_mobile {
-            display: block;
-            width: 320px;
-        }
-
-        .premios_desktop {
-            display: none;
-        }
-    }
-
-    footer {
-        padding: 15px;
-        font-size: 0.8rem;
-    }
-
-    .mi_informacion {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    footer {
-        .derechos_reservados {
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-
-        }
-    }
-
-
 }
